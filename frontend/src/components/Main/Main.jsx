@@ -10,10 +10,10 @@ const Main = () => {
         </div>
         <div className='max-w-[900px] m-auto '>
             <div className='my-[50px] mx-0 text-[56px] text-[#c4c7c5] font-[500] p-[20px]'>
-                <p><span>Hello, Vandana.</span></p>
+                <p><span className='bg-gradient-to-tr from-[#4b90ff] to-[#ff5546] bg-clip-text text-transparent'>Hello, Vandana.</span></p>
                 <p>How can I help you today?</p>
             </div>
-            <div className=''>
+            <div className='grid grid-cols-[repeat(auto-fill,minmax(180px,1fr))] gap-[15px] p-[20px]'>
                 <div className=''>
                     <p>Suggest beautiful places to see on an upcoming road trip.</p>
                     <img src={assets.compass_icon} alt="" />
