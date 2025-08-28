@@ -14,21 +14,21 @@ const Main = () => {
                 <p>How can I help you today?</p>
             </div>
             <div className='grid grid-cols-[repeat(auto-fill,minmax(180px,1fr))] gap-[15px] p-[20px]'>
-                <div className=''>
+                <div className='h-[200px] p-[15px] bg-[#f0f4f9] rounded-[10px] relative cursor-pointer'>
                     <p>Suggest beautiful places to see on an upcoming road trip.</p>
-                    <img src={assets.compass_icon} alt="" />
+                    <img className='w-[35px] p-[5px] absolute bg-[#ffffff] rounded-[20px] bottom-[10px] right-[10px]' src={assets.compass_icon} alt="" />
                 </div>
-                <div className=''>
+                <div className='h-[200px] p-[15px] bg-[#f0f4f9] rounded-[10px] relative cursor-pointer'>
                     <p>Briefly summarize this concept: Urban Planning.</p>
-                    <img src={assets.bulb_icon} alt="" />
+                    <img className='w-[35px] p-[5px] absolute bg-[#ffffff] rounded-[20px] bottom-[10px] right-[10px]' src={assets.bulb_icon} alt="" />
                 </div>
-                <div className=''>
+                <div className='h-[200px] p-[15px] bg-[#f0f4f9] rounded-[10px] relative cursor-pointer'>
                     <p>Brainstorm team bonding activities for our work retreat.</p>
-                    <img src={assets.message_icon} alt="" />
+                    <img className='w-[35px] p-[5px] absolute bg-[#ffffff] rounded-[20px] bottom-[10px] right-[10px]' src={assets.message_icon} alt="" />
                 </div>
-                <div className=''>
+                <div className='h-[200px] p-[15px] bg-[#f0f4f9] rounded-[10px] relative cursor-pointer'>
                     <p>Improve the readability of the following code.</p>
-                    <img src={assets.code_icon} alt="" />
+                    <img className='w-[35px] p-[5px] absolute bg-[#ffffff] rounded-[20px] bottom-[10px] right-[10px]' src={assets.code_icon} alt="" />
                 </div>
             </div>
         </div>
