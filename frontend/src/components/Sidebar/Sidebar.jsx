@@ -8,9 +8,9 @@ const Sidebar = () => {
         <div className='py-[25px] px-[15px] box-border min-h-[100vh] inline-flex flex-col justify-between bg-[#f0f4f9]'>
             <div className="top">
                 <img onClick={()=> setExtended(prev=>!prev)} className='w-[20px] block ml-[10px] cursor-pointer' src={assets.menu_icon} alt="" />
-                <div className='mt-[50px] inline-flex items-center gap-[10px] py-[10px] px-[15px] bg-[#e6eaf1] rounded-[50px] font-[14px] font-gray-700 cursor-pointer'>
+                <div className='mt-[50px] inline-flex items-center gap-[10px] py-[10px] px-[15px] bg-[#e6eaf1] rounded-[50px] text-[14px] text-gray-700 cursor-pointer'>
                     <img className='w-[20px]' src={assets.plus_icon} alt="" />
-                    {extended ? <p className='font-[14px] text-gray-500'>New Chat</p> : null}
+                    {extended ? <p>New Chat</p> : null}
                 </div>
                 {extended
                     ? <div className='flex flex-col'>
