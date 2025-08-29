@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { assets } from '../../assets/assets'
+import { Context } from '../../context/Context'
 
 const Main = () => {
+
+    const {onSent, recentPrompt, showResult, loading, resultData, setInput, input} = useContext(Context)
   return (
     <div className='min-h-[100vh] flex-1 pb-[15vh] relative'>
         <div className='flex items-center justify-between  p-[20px]'>
@@ -33,11 +36,11 @@ const Main = () => {
             </div>
             <div className="absolute bottom-0 w-[100%] max-w-[900px] py-0 px-[20px] m-auto">
                 <div className="flex items-center justify-between gap-[20px] bg-[#f0f4f9] py-[10px] px-[20px] rounded-[50px]">
-                    <input className='flex-1 bg-transparent border-0 outline-none p-[8px] text-[18px]' type="text" placeholder='Enter a prompt here'/>
+                    <input onChange={(e)=>setInput(e.target.value)} value={input} className='flex-1 bg-transparent border-0 outline-none p-[8px] text-[18px]' type="text" placeholder='Enter a prompt here'/>
                     <div className='flex items-center gap-[15px]'>
                         <img className='w-[24px] cursor-pointer' src={assets.gallery_icon} alt="" />
                         <img className='w-[24px] cursor-pointer' src={assets.mic_icon} alt="" />
-                        <img className='w-[24px] cursor-pointer' src={assets.send_icon} alt="" />
+                        <img onClick={()=>onSent()} className='w-[24px] cursor-pointer' src={assets.send_icon} alt="" />
                     </div>
                 </div>
                 <p className="text-[13px] my-[15px] mx-auto text-center font-[300]">
