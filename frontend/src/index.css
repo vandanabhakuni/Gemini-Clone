@@ -11,3 +11,7 @@
     box-sizing: border-box;
     font-family: Outfit;
 }
+
+*::-webkit-scrollbar {
+    display: none;
+  }

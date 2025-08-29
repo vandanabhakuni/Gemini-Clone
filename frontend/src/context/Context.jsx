@@ -16,7 +16,11 @@ const ContextProvider = (props) => {
         setResultData("")
         setLoading(true)
         setShowResult(true)
-        await runChat(input)
+        setRecentPrompt(input)
+        const response = await runChat(input)
+        setResultData(response)
+        setLoading(false)
+        setInput("")
     }
 
     
